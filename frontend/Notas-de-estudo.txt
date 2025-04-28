@@ -1,0 +1,44 @@
+Um componente React é um JSX é uma função que retorna HTML.
+
+ex. function App() {
+  return (
+
+<h1>Hello World!</h1>
+
+  );
+}
+
+JSQ é JavaScript XML, é uma sintaxe que permite escrever HTML ou XML dentro do JavaScript.
+
+
+PROPRIEDADES NO REACT: É quase a mesma coisa que o ATRIBUTO do HTML, posso por exemplo, colocar um ID, um atributo de HTML 
+em um componente REACT.
+
+ex. function App() {
+  return (
+
+<h1 id="title">Hello World!</h1>
+
+  );
+}
+
+ou
+
+ex. function App() {
+  return (
+
+<h1 id="className">Hello World!</h1>
+
+  );
+}
+
+Conceitos de estado:
+
+imutabilidade: Imutabilidade significa que você nunca modifica diretamente um valor ou objeto existente — em vez disso, 
+você cria uma nova versão modificada dele.
+O React depende da comparação de valores (como props e state) pra saber se precisa re-renderizar um componente. 
+Se você modifica um objeto diretamente, o React não percebe que ele mudou — porque o endereço na memória continua o mesmo.
+
+useState: Quando utilizamos o método useState ele nos retorna um array com 2 posições, o valor e uma função de atualização do valor.
+Um estado não é uma variavel comum.
+

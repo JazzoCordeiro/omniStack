@@ -1,0 +1,63 @@
+quando eu crio uma rota, eu tenho que colocar o RECURSO, ou seja, qual local da rota eu quero.
+ex:
+
+app.get(./users)
+
+##############################################################################################
+
+Métodos HTTP, também conhecido como CRUD (create, read, update and delete):
+
+GET: Serve para buscar informação no backend.
+POST: Serve para criar/adicionar nova informação no backend/Banco de dados.
+PUT: Serve para alterar uma informação no backend/Banco de dados.
+DELETE: Serve para eliminar uma informação no backend/banco de dados.
+
+##############################################################################################
+tipos de parametros:
+os parâmetros são valores que vêm nas requisições HTTP (como GET, POST, etc.). Eles são usados para enviar informações 
+do cliente para o servidor.
+
+Parâmetros de Rota: Fazem parte da URL. REQ.PARAMS
+
+Parâmetros de Query: Vêm após o ? na URL. REQ.QUERY
+
+ Parâmetros de Corpo: REQ.BODY
+Usados em requisições POST, PUT, PATCH, etc.
+Os dados vêm no corpo da requisição (em JSON, por exemplo).
+Para ler, você precisa usar express.json().
+#####################################################################################################################
+
+Antes de mexer no banco de dados é necessário pensar nas ENTIDADES, as entidades são coisas ou objetos principais que 
+podem ser guardadas num banco de dados, cada ENTIDADE tem ATRIBUTOS que vão virar as COLUNAS de uma tabela.
+ex.
+
+ENTIDADE: ALUNO
+
+Atributos: ID, Nome, Idade, Série, Nome dos pais, Endereço, Telefone.
+
+E quando falamos das FUNCIONALIDADES, falamos do CRUD 
+
+ex.
+
+Se você tem um sistema de biblioteca:
+
+    Entidades: Livro, Usuário, Empréstimo
+
+    Funcionalidades:
+
+        Cadastrar livros
+
+        Registrar empréstimos
+
+        Ver histórico de um usuário
+
+        Remover livros antigos
+
+
+##############################################################################################################################
+
+Para fazer o deploy, o cors precisa ter um caminho especificado, caso contrário, qualquer origem poderá acessa-lo.
+
+ex: app.use(cors())   QUALQUER ORIGEM PODE ACESSAR.
+
+EX: app.use(cors(HTTPS://MEUSITE.COM)) APENAS O MEUSITE.COM vai poder acessar.
