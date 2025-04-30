@@ -42,3 +42,13 @@ Se você modifica um objeto diretamente, o React não percebe que ele mudou — 
 useState: Quando utilizamos o método useState ele nos retorna um array com 2 posições, o valor e uma função de atualização do valor.
 Um estado não é uma variavel comum.
 
+##################################################################################################################################
+
+AQUI nós podemos definir base da URL da API — ou seja, o endereço do servidor backend com o qual o frontend vai se comunicar,
+por exemplo: www.seusite.com 
+
+import axios from "axios";
+
+const api = axios.create({
+    baseURL: 'http://localhost:3333'
+})
